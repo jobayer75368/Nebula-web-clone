@@ -1,0 +1,92 @@
+/* initial setup start  */
+* {
+    font-family: var(--primary-font-family);
+}
+
+body {
+    color: var(--primary-font-color);
+    font-size: var(--primary-font-size);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #DB0E1E;
+    --secondary-color: #e92c3c;
+    --primary-font-color: #101010;
+    --secondary-font-color: #FFFFFF;
+    --tertiary-font-colot: #54595F;
+    --footer-color: #0E0A38;
+    --primary-font-family: "Poppins", sans-serif;
+    --primary-font-size: 1.1rem;
+    --secondary-font-size: 2.5rem;
+}
+
+body h2 {
+    font-weight: 550;
+    font-size: var(--secondary-font-size);
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+h2 span {
+    color: var(--primary-font-color);
+    font-style: normal;
+}
+
+h2:hover {
+    color: var(--footer-color);
+}
+
+.primary_link,
+.secondary_link {
+    font-size: .9rem;
+    display: inline-block;
+    color: var(--secondary-font-color);
+    background-color: var(--primary-color);
+    padding: .6rem 1.2rem;
+    border-radius: 0.2rem;
+    margin-top: .8rem;
+    transition: all .3s ease;
+
+}
+
+.secondary_link {
+    background-color: var(--secondary-color);
+}
+
+.primary_link:hover,
+.secondary_link:hover {
+    background-color: var(--footer-color);
+}
+
+/* initial setup end  */
+
+/* header part  */
+.logo img {
+    width: 11rem;
+}
+
+nav li {
+    transition: all .3s ease;
+}
+
+nav li:hover,
+.active_page {
+    color: var(--primary-color);
+}
+
+.hero {
+    height: 100vh;
+    background-color: #efedff;
+}
+
+.hero p {
+    color: var(--tertiary-font-colot);
+}
+
+.hero_img {
+    width: 120rem;
+}
