@@ -22,7 +22,7 @@ html {
     --primary-font-family: "Poppins", sans-serif;
     --primary-font-size: 1.1rem;
     --secondary-font-size: 2.5rem;
-    --expertise-color: rgb(243, 250, 255);
+    --expertise-color: rgb(239, 248, 255);
 }
 
 body h2 {
@@ -145,4 +145,45 @@ nav li:hover,
 .expertise_grid div:hover {
     background-color: var(--secondary-font-color);
     box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.176);
+}
+
+.preview_card {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.18);
+    border-radius: .5rem;
+}
+
+.grid_site {
+    height: 75%;
+    overflow: hidden;
+}
+
+.grid_site iframe {
+    width: 100%;
+    height: 2600px;
+    border: none;
+    transform: translateY(0);
+    transition: transform 5s ease;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.preview_card:hover .grid_site iframe {
+    transform: translateY(-2200px);
+}
+
+.grid_text {
+    height: 25%;
+}
+
+.clients_section {
+    background-color: var(--expertise-color);
+}
+
+.clients_section img {
+    width: 20rem;
+    height: 15rem;
 }
