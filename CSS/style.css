@@ -17,7 +17,7 @@ html {
     --secondary-color: #dd2332;
     --primary-font-color: #101010;
     --secondary-font-color: #FFFFFF;
-    --tertiary-font-colot: #54595F;
+    --tertiary-font-color: #54595F;
     --footer-color: #0E0A38;
     --primary-font-family: "Poppins", sans-serif;
     --primary-font-size: 1.1rem;
@@ -123,11 +123,11 @@ nav li:hover,
 }
 
 .hero p {
-    color: var(--tertiary-font-colot);
+    color: var(--tertiary-font-color);
 }
 
 .hero_img {
-    width: 120rem;
+    width: 160rem;
 }
 
 /* service section  */
@@ -137,7 +137,7 @@ nav li:hover,
 }
 
 .service_grid p {
-    color: var(--tertiary-font-colot);
+    color: var(--tertiary-font-color);
 }
 
 .service_grid i {
@@ -228,11 +228,16 @@ footer .social_links:hover {
     background-color: var(--primary-color);
 }
 
-footer .footer_links {
-    width: 22rem;
+footer .links_1 {
+    width: 14rem;
 }
 
-footer .footer_links a:hover {
+footer .links_2 {
+    width: 25rem;
+}
+
+footer .links_1 a:hover,
+footer .links_2 a:hover {
     color: var(--primary-color);
 
 
@@ -275,7 +280,21 @@ footer .footer_about {
     padding: 4.6rem 0 4.6rem 0;
 }
 
-.about_about img {
-    width: 34rem;
+.about_about_img {
+    width: 160rem;
+}
+
+.about_goal_img {
+    width: 97rem;
+}
+
+.about_about img,
+.about_goal img {
+    width: 100%;
     border-radius: .4rem;
+}
+
+.about_about,
+.about_goal {
+    font-size: .98rem;
 }
