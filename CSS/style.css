@@ -22,7 +22,13 @@ html {
     --primary-font-family: "Poppins", sans-serif;
     --primary-font-size: 1.1rem;
     --secondary-font-size: 2.5rem;
+    --tertiary-font-size: 3rem;
     --expertise-color: rgb(239, 248, 255);
+}
+
+body h1 {
+    font-size: var(--tertiary-font-size);
+    font-weight: bold;
 }
 
 body h2 {
@@ -249,4 +255,27 @@ footer .footer_about {
 
 .fa-angle-up:hover {
     background-color: #130d53;
+}
+
+/* About Page start  */
+.page_hero {
+    background: url(../Assets/images/page_hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page_hero .page_hero_overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #00000078;
+}
+
+.page_hero .container {
+    padding: 4.6rem 0 4.6rem 0;
+}
+
+.about_about img {
+    width: 34rem;
+    border-radius: .4rem;
 }
