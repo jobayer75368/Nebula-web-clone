@@ -37,6 +37,7 @@ body h2 {
     color: var(--primary-color);
     font-style: italic;
     text-transform: capitalize;
+    transition: all .3s ease;
 }
 
 h2 span {
@@ -199,7 +200,8 @@ nav li:hover,
 }
 
 footer {
-    padding: 6rem 0 0 0;
+    width: 100%;
+    padding: 6rem 0 1rem 0;
     background-color: var(--footer-color);
 }
 
@@ -284,17 +286,31 @@ footer .footer_about {
     width: 160rem;
 }
 
-.about_goal_img {
+.about_goal_img,
+.about_story_img {
     width: 97rem;
 }
 
+.about_choose_img {
+    width: 50rem;
+}
+
 .about_about img,
-.about_goal img {
+.about_goal img,
+.about_story img,
+.about_choose img {
     width: 100%;
     border-radius: .4rem;
 }
 
 .about_about,
-.about_goal {
+.about_goal,
+.about_story,
+.about_choose {
     font-size: .98rem;
+}
+
+.choose {
+    width: 12rem;
+    height: 4.3rem;
 }
