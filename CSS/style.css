@@ -139,6 +139,7 @@ nav li:hover,
 
 .service_grid p {
     color: var(--tertiary-font-color);
+    font-size: 1rem;
 }
 
 .service_grid i {
