@@ -415,3 +415,40 @@ footer .footer_about {
 .blog-card:hover .blog_head {
     color: var(--primary-color);
 }
+
+/* blog cards done  */
+
+/* contact cards  */
+
+.card_icon {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(84, 89, 95);
+    border-radius: 50%;
+    font-size: 2.5rem;
+}
+
+.grid_card,
+.grid_card:hover .card_icon,
+.grid_card:hover h3 {
+    transition: all .3s ease;
+}
+
+.grid_card:hover {
+    border: 1px solid rgba(0, 0, 0, 0.628);
+    transform: translateY(-10px);
+}
+
+.grid_card:hover .card_icon {
+    color: var(--primary-color);
+    background-color: white;
+    border: 2px solid var(--primary-color);
+}
+
+.grid_card:hover h3 {
+    color: var(--primary-color);
+}
