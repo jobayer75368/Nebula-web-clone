@@ -355,3 +355,63 @@ footer .footer_about {
     height: 100%;
     margin-top: -100%;
 }
+
+/* client cards */
+
+/* blog cards  */
+
+.img_overlay {
+    position: relative;
+    z-index: 1;
+    height: 11rem;
+}
+
+.img_overlay img {
+    height: 100%;
+    width: 100%;
+    transition: all .3s ease;
+
+}
+
+.blog_overlay {
+    position: relative;
+    z-index: 4;
+    margin-top: -60%;
+    margin-left: -5%;
+    top: 0;
+    height: 130%;
+    width: 110%;
+    color: white;
+    background: transparent;
+    transition: all .3s ease;
+}
+
+.blog_overlay .date {
+    line-height: 1rem;
+    height: 3.3rem;
+    width: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgb(255, 23, 77);
+    position: relative;
+    bottom: 0;
+    margin-top: 26%;
+    margin-left: -4%;
+    cursor: pointer;
+}
+
+.blog-card:hover .img_overlay img {
+    transform: rotate(2deg) scale(1.05);
+}
+
+.blog-card:hover .blog_overlay {
+    background-color: rgba(255, 255, 255, 0.239);
+}
+
+.blog-card:hover .blog_head {
+    color: var(--primary-color);
+}
