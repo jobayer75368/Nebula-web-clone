@@ -452,3 +452,11 @@ footer .footer_about {
 .grid_card:hover h3 {
     color: var(--primary-color);
 }
+
+.form_info {
+    width: 50%;
+}
+
+.form_info form div input textarea {
+    width: 100%;
+}
