@@ -473,3 +473,55 @@ form p {
 .form_info input:focus {
     outline: 1px dotted rgb(0, 81, 255);
 }
+
+/* floating div  */
+.floating_div_first,
+.floating_div_second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .95rem;
+    background-color: white;
+    margin-top: -2.2rem;
+    border: 1px solid rgb(205, 205, 205);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.185);
+}
+
+.floating_div_first {
+    display: none;
+    width: 15rem;
+    height: 5rem;
+    margin-left: 38rem;
+    transition: all .3s ease;
+}
+
+.floating_div_second {
+    display: none;
+    width: 15rem;
+    height: 12rem;
+    margin-top: -2.3rem;
+    margin-left: 44rem;
+}
+
+.floating_div_first a,
+.floating_div_second a {
+    padding: .9rem .8rem .9rem 1rem;
+    display: block;
+    width: 100%;
+}
+
+.floating_animation {
+    display: flex;
+    animation: move .35s ease forwards;
+}
+
+@keyframes move {
+    from {
+        margin-top: -2.3rem;
+    }
+
+    to {
+        margin-top: -1.5rem;
+    }
+}
