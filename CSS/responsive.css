@@ -1,0 +1,14 @@
+.sideBar {
+    left: -110%;
+    transition: all .6s ease;
+}
+
+.sideBar_toggle {
+    left: 0;
+}
+
+@media screen and (max-width:640px) {
+    header nav {
+        display: none;
+    }
+}

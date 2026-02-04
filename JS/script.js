@@ -53,3 +53,15 @@ floatingSecond.addEventListener("mouseout", function () {
         }
     }, 100)
 })
+
+let sideBar = document.querySelector(".sideBar")
+let sideBarToggle = document.querySelector("sideBar_toggle")
+const navBtn = document.querySelector(".nav_btn")
+const navClose = document.querySelector(".nav_close")
+
+navBtn.addEventListener('click', function () {
+    sideBar.classList.toggle("sideBar_toggle")
+})
+navClose.addEventListener('click', function () {
+    sideBar.classList.toggle("sideBar_toggle")
+})

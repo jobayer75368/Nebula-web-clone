@@ -11,10 +11,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Vanilla CSS link -->
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
     <!-- font awosome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <!-- google font link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +29,27 @@
 </head>
 
 <body id="top">
+    <div class="sideBar bg-white z-50 fixed h-screen w-screen font-semibold">
+        <div class="flex justify-end w-100">
+            <button
+                class="nav_close text-white bg-[var(--primary-color)] hover:bg-[var(--footer-color)] px-3 py-1 rounded mr-10 mt-6 menu-toggle">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="flex flex-col gap-8 pl-5 ">
+            <li class="hover:text-[var(--primary-color)] transition-all duration-300"><a href="index.html">Home</a></li>
+            <li class="text-[var(--primary-color)] transition-all duration-300"><a href="about.html">About</a><i
+                    class="fa-solid fa-chevron-down text-xs"></i>
+            </li>
+            <li class="hover:text-[var(--primary-color)] transition-all duration-300"><a
+                    href="service.html">Services</a><i class="fa-solid fa-chevron-down text-xs"></i>
+            </li>
+            <li class="hover:text-[var(--primary-color)]"><a href="portfolio.html">Portfolio</a></li>
+            <li class="hover:text-[var(--primary-color)]"><a href="client.html">Our Clients</a></li>
+            <li class="hover:text-[var(--primary-color)]"><a href="blog.html">Blog</a></li>
+            <li class="hover:text-[var(--primary-color)]"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
     <header class="h-20 bg-white flex items-center shadow-md shadow-black/15 sticky top-0 z-10">
         <div class="container mx-auto px-20 flex justify-between items-center">
             <div class="logo">
@@ -44,6 +68,14 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <div>
+                <button
+                    class="nav_btn bg-red-600 text-white px-4 rounded py-1 hover:bg-[var(--footer-color)] cursor-pointer flex items-center">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+            </div>
         </div>
     </header>
     <div class="floating_div_first fixed z-50 shadow-lg"><a
