@@ -477,7 +477,7 @@ form p {
 /* floating div  */
 .floating_div_first,
 .floating_div_second {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -489,19 +489,19 @@ form p {
 }
 
 .floating_div_first {
-    display: none;
+    /* display: none; */
     width: 15rem;
     height: 5rem;
-    margin-left: 38rem;
+    margin-left: 31rem;
     transition: all .3s ease;
 }
 
 .floating_div_second {
-    display: none;
+    /* display: none; */
     width: 15rem;
     height: 12rem;
     margin-top: -2.3rem;
-    margin-left: 44rem;
+    margin-left: 37rem;
 }
 
 .floating_div_first a,
@@ -524,4 +524,9 @@ form p {
     to {
         margin-top: -1.5rem;
     }
+}
+
+header {
+    position: sticky;
+    top: -30px;
 }
